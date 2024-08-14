@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Cadastro</title>
+</head>
+<style>
+    input{
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
+    max-width: 80%;
+}
+label{
+    padding: 10px;
+    margin-right: 5px;
+
+}
+button{
+    margin-top: 60px;
+    font-size: 20px;
+    background-color: aquamarine;
+    cursor: pointer;
+}
+.cad{
+    height: 400px;
+    width: 800px;
+    background-color: bisque;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+.tbox {
+    text-align: left;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+</style>
+<body>
+    <div class="cad">
+        <br>
+        <h1> Cadastre-se </h1>
+        <form method="POST" action="envia.php">
+            <div class="tbox">
+                <label for="nome">Nome:</label>
+                <input type="text"  name="nome" maxlength="100" id="nome" required><br>
+            </div>
+            <div class="tbox">
+            <label for="idade">Idade:&nbsp;</label>
+            <input type="number" name="idade" id="idade" minlength="1" maxlength="3" required><br>
+            </div>
+            <div class="tbox">
+            <label for="cpf">CPF: &nbsp;</label>
+            <input type="text" name="cpf"  minlength="11" maxlength="14" id="cpf" required>
+            </div>
+            <br>
+            <button type="submit">Cadastrar</button>
+           
+        </form>
+    </div>
+</body>
+</html>
